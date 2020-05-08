@@ -2,7 +2,7 @@ const string2int = (value) => {
   let result = 0
   let multiply = 1
   let isInt = false
-  let i =  value.length
+  let i =  value.length - 1;
   for (; 0 <= i; i--) {
     if (value[i] >= '0' && value[i] <= '9') {
       result += value[i] * multiply
